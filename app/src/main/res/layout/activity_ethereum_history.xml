@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView27"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:layout_marginEnd="265dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="265dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Peak USD Value:"
+        app:layout_constraintBottom_toTopOf="@+id/textView28"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView28"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="31dp"
+        android:layout_marginEnd="235dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="235dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="11dp"
+        android:text="$1,417 on 1/10/2018"
+        app:layout_constraintBottom_toTopOf="@+id/textView29"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView27" />
+
+    <TextView
+        android:id="@+id/textView29"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="297dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="297dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="25dp"
+        android:text="Origination:"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView28" />
+
+    <TextView
+        android:id="@+id/textView30"
+        android:layout_width="345dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="23dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="23dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="11dp"
+        android:text="Ethereum was proposed in late 2013 by Vitalik Buterin, a cryptocurrency researcher and programmer. The system went live in July of 2015 with 72 million coins premined which now accounts for approximately 70% of the total circulating supply in 2018. Due to complications in 2016, the original Ethereum cryptocurrency was split into two separate blockchains - the new version Ethereum (ETH) and the classic Ethereum Classic (ETC)."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView29" />
+
+    <TextView
+        android:id="@+id/textView33"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="275dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="275dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="35dp"
+        android:text="How to Obtain:"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView30" />
+
+    <TextView
+        android:id="@+id/textView44"
+        android:layout_width="345dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="23dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="23dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:text="The mining of Ethereum is very similar to that of bitcoin. The hash function being solved iterates through a block of transactions and if the hash value matches up with the current target for the block, the miner is rewarded with some value of Ethereum."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView33" />
+</android.support.constraint.ConstraintLayout>

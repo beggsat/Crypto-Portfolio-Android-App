@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="backClicked"
+        android:text="Back"
+        app:layout_constraintBottom_toTopOf="@+id/selectTitle"
+        app:layout_constraintEnd_toStartOf="@+id/refreshButton"
+        app:layout_constraintHorizontal_bias="0.083"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.219" />
+
+    <Button
+        android:id="@+id/refreshButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginLeft="192dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginStart="192dp"
+        android:text="Refresh"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/backButton"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/selectTitle"
+        android:layout_width="200dp"
+        android:layout_height="57dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="60dp"
+        android:text="Select a coin:"
+        android:textSize="32sp"
+        app:layout_constraintEnd_toStartOf="@+id/updateSpinner"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/backButton" />
+
+    <Spinner
+        android:id="@+id/updateSpinner"
+        android:layout_width="56dp"
+        android:layout_height="55dp"
+        android:layout_marginEnd="104dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="104dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="111dp"
+        android:background="@android:drawable/btn_dropdown"
+        android:spinnerMode="dropdown"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/selectTitle"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/coinSelected"
+        android:layout_width="75dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="259dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="259dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="23dp"
+        android:text="Coin:"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/selectTitle" />
+
+    <TextView
+        android:id="@+id/coinName"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginLeft="53dp"
+        android:layout_marginRight="56dp"
+        android:layout_marginStart="53dp"
+        android:layout_marginTop="22dp"
+        android:text="No coin selected"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/coinSelected"
+        app:layout_constraintTop_toBottomOf="@+id/updateSpinner" />
+
+    <TextView
+        android:id="@+id/newValue"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="218dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="218dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="26dp"
+        android:text="New Value:"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/coinSelected" />
+
+    <EditText
+        android:id="@+id/inputNewValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_marginTop="26dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/newValue"
+        app:layout_constraintTop_toBottomOf="@+id/coinName"
+        tools:ignore="LabelFor" />
+
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="submitClicked"
+        android:text="Submit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputNewValue" />
+
+</android.support.constraint.ConstraintLayout>

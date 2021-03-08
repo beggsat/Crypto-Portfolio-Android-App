@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">coinTrader</string>
+    <string name="Submit">Submit</string>
+    <string name="Cancel">Cancel</string>
+    <string name="select_a_coin">Select a coin:</string>
+    <string name="coin_selected">Coin Selected:</string>
+    <string name="amount_purchased">Amount Purchased:</string>
+    <string name="amount_sold">Amount Sold:</string>
+    <string name="price">Price:</string>
+    <string name="no_coin_selected">No coin selected</string>
+    <string name="title_activity_bitcoin">Bitcoin</string>
+</resources>

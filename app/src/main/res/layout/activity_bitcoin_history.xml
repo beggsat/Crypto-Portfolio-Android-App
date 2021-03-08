@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="265dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="265dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Peak USD Value:"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView31"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="219dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="219dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:text="$19,783 on 12/17/2017"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView26" />
+
+    <TextView
+        android:id="@+id/textView32"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:layout_marginEnd="297dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="297dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="36dp"
+        android:text="Origination:"
+        app:layout_constraintBottom_toTopOf="@+id/originStoryText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView31" />
+
+    <TextView
+        android:id="@+id/originStoryText"
+        android:layout_width="345dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="39dp"
+        android:layout_marginEnd="23dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="23dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="132dp"
+        android:text="Satoshi Nakamoto is the psuedonym for the anonymous creator of bitcoin that created the bitcoin network in early 2009. Nakamoto mined the genesis block of bitcoin granting a reward of 50 bitcoins and 6 days later the first open source bitcoin client was released. "
+        app:layout_constraintBottom_toTopOf="@+id/textView34"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView34"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="275dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="275dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="39dp"
+        android:text="How to Obtain:"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/originStoryText" />
+
+    <TextView
+        android:id="@+id/miningText"
+        android:layout_width="345dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="189dp"
+        android:layout_marginEnd="23dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="23dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="19dp"
+        android:text="“Mining” bitcoin refers to the discovery of new bitcoin by running SHA256 double round hash verification processes in order to validate Bitcoin transactions for the Bitcoin network."
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView34" />
+
+</android.support.constraint.ConstraintLayout>

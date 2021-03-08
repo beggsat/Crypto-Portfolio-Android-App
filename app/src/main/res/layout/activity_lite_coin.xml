@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LiteCoin">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="404dp"
+        android:layout_height="207dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginStart="1dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/litecoin"
+        android:contentDescription="TODO" />
+
+    <TextView
+        android:id="@+id/litecoinPriceText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="21dp"
+        android:layout_marginEnd="288dp"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="288dp"
+        android:layout_marginStart="7dp"
+        android:text="Price: $52.09"
+        android:textAppearance="@style/TextAppearance.AppCompat.Widget.Button.Borderless.Colored"
+        app:layout_constraintBottom_toTopOf="@+id/percChangeText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/litecoinNameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="21dp"
+        android:layout_marginEnd="269dp"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="269dp"
+        android:layout_marginStart="7dp"
+        android:text="Name: Litecoin"
+        android:textAppearance="@style/TextAppearance.AppCompat.Widget.Button.Borderless.Colored"
+        app:layout_constraintBottom_toTopOf="@+id/litecoinPriceText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/percChangeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="175dp"
+        android:layout_marginEnd="229dp"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="229dp"
+        android:layout_marginStart="7dp"
+        android:text="Percent Change: NA"
+        android:textAppearance="@style/TextAppearance.AppCompat.Widget.Button.Borderless.Colored"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/litecoinInfoButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="18dp"
+        android:layout_marginEnd="149dp"
+        android:layout_marginLeft="147dp"
+        android:layout_marginRight="149dp"
+        android:layout_marginStart="147dp"
+        android:onClick="litecoinHistoryClicked"
+        android:text="Info"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</android.support.constraint.ConstraintLayout>
